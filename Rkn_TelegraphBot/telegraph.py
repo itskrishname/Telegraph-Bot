@@ -40,13 +40,13 @@ async def getmedia(bot, update):
             disable_web_page_preview=True,
             reply_markup=reply_markup)
             return
-        text=f"**Link :-** `https://graph.org{response[0]}`\n\n**𝑱𝒐𝒊𝒏 ⚡ :-** @RknDeveloper"
+        text=f"**Link :-** `https://graph.org{response[0]}`\n\n**𝑱𝒐𝒊𝒏 ⚡ :-** @SECRECT_BOT_UPDATES"
         reply_markup=InlineKeyboardMarkup(
         [[
         InlineKeyboardButton(text="Open Link", url=f"https://graph.org{response[0]}"),
         InlineKeyboardButton(text="Share Link", url=f"https://telegram.me/share/url?url=https://graph.org{response[0]}")
         ],[
-        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/RknDeveloper")
+        InlineKeyboardButton(text="Join Updates Channel", url="https://telegram.me/SECRECT_BOT_UPDATES")
         ]])   
         await message.edit_text(
         text=text,
