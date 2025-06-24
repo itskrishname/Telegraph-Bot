@@ -16,7 +16,7 @@ class Config(object):
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/f6c15009bce07058f1edb.jpg")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7660990923').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "SECRECT_BOT_UPDATES")
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', ''))
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1002771880794'))
 
     # download file
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
