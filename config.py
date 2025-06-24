@@ -3,20 +3,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyrogram client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "24828197")
+    API_HASH  = os.environ.get("API_HASH", "d36e278e89ebeb900aeda4128d413a77")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config get this from mongodb
-    DB_NAME = os.environ.get("DB_NAME","Rkn-Developer")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Krishna")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Krishna:krishna@cluster0.ecime.mongodb.net/")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC = os.environ.get("START_PIC", "https://graph.org/file/f6c15009bce07058f1edb.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6151758586').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "RknDeveloper")
-    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', '-1001944995812'))
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '7660990923').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "SECRECT_BOT_UPDATES")
+    LOG_CHANNEL = int(os.environ.get('LOG_CHANNEL', ''))
 
     # download file
     DOWNLOAD_LOCATION = os.environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/")
@@ -34,7 +34,7 @@ I ᴀᴍ sɪᴍᴘʟᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʙᴏᴛ. sᴇɴᴅ ᴍᴇ ɪᴍ
 
     ABOUT_TXT = """<b>➤ Mʏ Nᴀᴍᴇ: {}
 ➤ Cʀᴇᴀᴛᴏʀ : <a href='tg://settings'>Tʜɪs Pᴇʀsᴏɴ</a>
-➤ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/RknDeveloper'>Rᴋɴ Dᴇᴠᴇʟᴏᴘᴇʀ</a>
+➤ Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/SECRECT_BOT_UPDATES'>SECRECT_BOT_UPDATES</a>
 ➤ Lɪʙʀᴀʀʏ : <a href='https://docs.pyrogram.org'>Pʏʀᴏɢʀᴀᴍ</a>
 ➤ Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org'>Pʏᴛʜᴏɴ 3</a>
 ➤ Dᴀᴛᴀ Bᴀsᴇ : <a href='https://www.mongodb.com/'>Mᴏɴɢᴏ Dʙ</a>
